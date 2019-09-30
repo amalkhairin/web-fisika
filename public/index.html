@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Katalog</title>
+    <meta name="description" content="This is a free Bootstrap landing page theme created for BootstrapZero. Feature video background and one page design." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <link rel="stylesheet" href="./css/ionicons.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+  <body class="bg-primary">
+        <div class="inner">
+            <h1>Katalog Alat dan Bahan Lab. Fisika Dasar - UNM</h3>
+        </div>
+        <div class="search-container">
+            <form id="demo-2">
+                <input type="search" id="mySearch" onkeyup="myFunction()" placeholder="Search">
+            </form>
+        </div>
+        <div class="isi">
+            <ul id="myUL">
+                <!-- Tambah isi tabel disini -->
+                <li>
+                    <a href="#">Nama Alat 1</a>
+                    <p>Jenis</p>
+                    <p>Jumlah</p>
+                    <p>Kondisi</p>
+                </li>
+                <li>
+                    <a href="#">Nama Alat 3</a>
+                    <p>Jenis</p>
+                    <p>Jumlah</p>
+                    <p>Kondisi</p>
+                </li>
+                <!-- add more here -->
+            </ul>
+        
+            <script>
+                function myFunction() {
+                    var input, filter, ul, li, a, i, txtValue;
+                    input = document.getElementById("mySearch");
+                    filter = input.value.toUpperCase();
+                    ul = document.getElementById("myUL");
+                    li = ul.getElementsByTagName("li");
+                    for (i = 0; i < li.length; i++) {
+                        a = li[i].getElementsByTagName("a")[0];
+                        txtValue = a.textContent || a.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            li[i].style.display = "";
+                        } else {
+                            li[i].style.display = "none";
+                        }
+                    }
+                }
+            </script>
+        </div>
+        <footer>
+            <p>created by <a href="http://instagram.com/amalkhrn">amalkhairin</a></p>
+        </footer>
+    
+    <!--scripts loaded here -->
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script src="./js/wow.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

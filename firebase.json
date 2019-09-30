@@ -1,0 +1,20 @@
+{
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  },
+  "rewrite" :[
+    {
+      "source" : "**",
+      "destination" : "/index.html",
+      "pages" : "/page/add.html"
+    }
+  ],
+  "database": {
+    "rules": "database.rules.json"
+  }
+}
